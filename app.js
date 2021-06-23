@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const ExpressError = require('./expressError');
-const calcRoutes = require('/routes/calc')
+const calcRoutes = require('./routes/calc')
 
 app.use(express.json());
 app.use("/calc", calcRoutes);
